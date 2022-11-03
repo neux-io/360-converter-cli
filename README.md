@@ -1,3 +1,8 @@
+# 360-converter-cli
+
+* wrapper around 360-converter c++ library
+* only supporting equirectangular types at the moment
+
 # 360-converter
 
 ## Overview
