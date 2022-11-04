@@ -1,7 +1,23 @@
 ## 360-converter-cli
 
 * wrapper around 360-converter c++ library
-* only supporting equirectangular types at the moment
+
+* Input images must be square sized
+
+* Wide image format support for input image
+
+* Output Image format, .png
+### Usage:
+
+* `--help` --> shows Help Message
+
+* `--input-{face} {path}` --> with face being (front,right,back,left,top,down), Path of each of the 6 needed faces
+
+* `--output {path}` -> Output Image Path with extension(Only .png supported at the time)
+
+* `--type {type}` --> with type being (cubemap,equirectangular,stereographic), Method of conversion
+
+* Example: `./360-converte-cli.exe --input-front square.jpg --input-right square2.jpg --input-back square3.jpg --input-left square4.jpg --input-top square5.jpg --input-down square6.jpg --type cubemap --output output.png`
 
 # 360-converter
 
